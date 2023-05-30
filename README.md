@@ -88,7 +88,7 @@ Luego de realizar los cambios, segun la opinion de los usuarios se realizo el pr
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Se puede observar la página web final desde un navegador. Puedes ver el proyecto final desde este enlace del <a href="#" target="_blank">PROYECTO FINAL</a>. (COLOCAR AQUI EL LINK)
+Se puede observar la página web final desde un navegador. Puedes ver el proyecto final desde este enlace <a href="(https://gabrielamolinacartes.github.io/DEV007-data-lovers/)" target="_blank">PROYECTO FINAL</a>.
 
 <br>
 
@@ -97,7 +97,7 @@ Se puede observar la página web final desde un navegador. Puedes ver el proyect
  
 ## 5. Pruebas Unitarias
 
-Se logró obtener un porcentaje de 87,8% de los test realizando, cumpliendo con la cobertura del 70% o más.
+Se logró obtener un porcentaje de 93,1% de los test realizando, cumpliendo con la cobertura del 70% o más.
 <br>
 
 <img src="/img/pruebasunitarias.png" style= width:75%>
