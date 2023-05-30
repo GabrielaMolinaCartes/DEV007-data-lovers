@@ -88,7 +88,7 @@ Luego de realizar los cambios, segun la opinion de los usuarios se realizo el pr
 
 ### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
 
-Se puede observar la página web final desde un navegador. Puedes ver el proyecto final desde este enlace <a href="(https://gabrielamolinacartes.github.io/DEV007-data-lovers/)" target="_blank">PROYECTO FINAL</a>.
+Se puede observar la página web final desde un navegador. Puedes ver el proyecto final desde este enlace <a href="https://gabrielamolinacartes.github.io/DEV007-data-lovers/" target="_blank">PROYECTO FINAL</a>.
 
 <br>
 
