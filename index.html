@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Data Lovers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Kurale&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/rio2016.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="contenido">
+
+  <header class="titulo-buscador">
+    <!--Contiene la imagen de anillos y el titulo principal-->
+    <div class="imagen-titulo">
+      <a href="https://olympics.com/es/olympic-games/rio-2016" target="_blank"><img src="images/olimpicos.png" class="aros-olimpicos" alt="juegos-olimpicos"></a>
+      <h1 class="title" id="title-refresh">Info Atletas</h1>
+    </div> 
+
+    <nav class="navegador" id="navBar">
+    <!--Contiene los selectores-->
+      <div class="botones-general">
+        <div class="contenido-select">
+          <label for="">
+            <select name="select" class="selectores" id="team">
+              <option value="team">Países</option>
+              <option value="Germany">Alemania</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Australia">Australia</option>
+              <option value="Azerbaijan">Azerbaiyan</option>
+              <option value="Belarus">Bielorusia</option>
+              <option value="Brazil">Brasil</option>
+              <option value="Canada">Canada</option>
+              <option value="China">China</option>
+              <option value="Colombia">Colombia</option>
+              <option value="Croatia">Croacia</option>
+              <option value="Cuba">Cuba</option>
+              <option value="Denmark">Dinamarca</option>
+              <option value="Spain">España</option>
+              <option value="United States">Estados Unidos</option>
+              <option value="France">Francia</option>
+              <option value="Great Britain">Gran Bretaña</option>
+              <option value="Hungary">Hungria</option>
+              <option value="Italy">Italia</option>
+              <option value="Jamaica">Jamaica</option>
+              <option value="Japan">Japón</option>
+              <option value="Kazakhstan">Kazajistán</option>
+              <option value="Kenya">Kenia</option>
+              <option value="Nigeria">Nigeria</option>
+              <option value="New Zealand">Nueva Zelanda</option>
+              <option value="Netherlands">Paises Bajos</option>
+              <option value="Poland">Polonia</option>
+              <option value="Russia">Rusia</option>
+              <option value="South Korea">Rep. de Corea</option>
+              <option value="Czech Republic">Rep. Checa</option>
+              <option value="South Africa">Sudafrica</option>
+              <option value="Sweden">Suecia</option>
+              <option value="Ukraine">Ucrania</option>
+              <option value="Uzbekistan">Uzbekistán</option>
+              <option value="Venezuela">Venezuela</option>
+            </select>
+          </label>
+        </div>
+    
+        <div class="contenido-select">
+          <select name="select" class="selectores" id="medal">
+            <label for="">
+              <option value="Medal">Medallas</option>
+              <option value="Gold">Oro</option>
+              <option value="Silver">Plata</option>
+              <option value="Bronze">Bronce</option>
+            </label>
+          </select>
+        </div>
+    
+        <div class="contenido-select">
+          <select name="select" class="selectores" id="sport">
+            <label for="">
+              <option value="sport">Deporte</option>
+              <option value="Athletics">Atletismo</option>
+              <option value="Basketball">Baloncesto</option>
+              <option value="Diving">Buceo</option>
+              <option value="Handball">Balonmano</option>
+              <option value="Boxing">Boxeo</option>
+              <option value="Cycling">Ciclismo</option>
+              <option value="Equestrianism">Equitación</option>
+              <option value="Fencing">Esgrima</option>
+              <option value="Football">Futbol</option>
+              <option value="Golf">Golf</option>
+              <option value="Gymnastics">Gimnasia</option>
+              <option value="Rhythmic Gymnastics">Gimnasia Rítmica</option>
+              <option value="Hockey">Hockey</option>
+              <option value="Judo">Judo</option>
+              <option value="Wrestling">Lucha</option>
+              <option value="Swimming">Natación</option>
+              <option value="Synchronized Swimming">Natación Sincronizada</option>
+              <option value="Sailing">Navegación</option>
+              <option value="Rowing">Remo</option>
+              <option value="Rugby Sevens">Rugby 7</option>
+              <option value="Canoeing">Piraguismo</option>
+              <option value="Table Tennis">Tenis de Mesa</option>
+              <option value="Tennis">Tenis</option>
+              <option value="Shooting">Tiro</option>
+              <option value="Archery">Tiro al Arco</option>
+              <option value="Triathlon">Triatlón</option>
+              <option value="Volleyball">Voleibol</option>
+              <option value="Beach Volleyball">Voleibol Playa</option>
+              <option value="Water Polo">WaterPolo</option>
+            </label>
+          </select>
+        </div>
+    
+        <div class="contenido-select" id="genFemMas">
+          <select name="select" class="selectores" id="gender">
+            <label for="">
+              <option value="gender">Género</option>
+              <option value="F">Femenino</option>
+              <option value="M">Masculino</option>
+            </label>
+          </select>
+        </div>
+        
+        <div class="contenido-select" id="order">
+          <select name="select" class="selectores" id="filtro-orden">
+            <label for="">
+              <option value="orden">Orden</option>
+              <option value="ascendente">A-Z</option>
+              <option value="descendente">Z-A</option>
+            </label>
+          </select>
+        </div>
+      
+      </div>
+    
+    </nav>
+
+  </header>
+
+  <main class="main-contenido">
+
+    <!--Seccion de la pagina de inicio-->
+    <section class="página-inicio">
+      <div class="introduccion" id="inicio">
+        <h2>¡Bienvenid@s!</h2>
+        <h5>“Acá podrás seleccionar información de los Atletas destacados de Río 2016”</h5>
+      </div>
+
+      <!--Boton para el calculo de genero-->
+      <div id="resultados-calculo">
+        <button class="btnCalcular" id="boton-calcular">¿Sabías que...?</button>
+      </div>
+    </section>
+
+    <!--Contiene las cards-->
+    <section class="primera-página" id="primera">
+      <section>
+        <div class="card sombra" id="resultado"></div>
+      </section>
+    </section>
+
+  </main>
+
+    <!--Pie de pagina-->
+  <footer class="pie-pagina">©Creado por Claudia y Gabriela, LABORATORIA DEV007-2023
+  </footer>
+
+
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>

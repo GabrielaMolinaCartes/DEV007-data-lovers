@@ -1,0 +1,253 @@
+* {
+    /*Para tener control de las cajas que se utilizaran*/
+    /*Hace que el border pase a formar parte del cálculo del ancho de la caja y no lo suman posteriormente.*/
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Kurale', serif;
+}
+
+body {
+    background-image: url(images/fondo.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    /*La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido*/
+    background-attachment: fixed; 
+    /*Se centra la imagen cuando se achica la pantalla, vertical y*/
+    background-position: center;   
+    width: 100%;
+    align-items: center;
+    /* Ajusta la altura máxima del contenedor según tus necesidades */
+    max-height: 500px;
+}
+
+/*Responsive de la imagen de fondo: Si el dispositivo tiene un tamaño de ancho menor al indicado*/
+@media screen and (max-width: 400px) { 
+    
+    body {
+        background-image: none;
+        background-color: #faf9f9;
+    }
+}
+
+header{
+    /*Muestra el color celeste degradado*/
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 16, 50, 1) 0%, rgba(107, 189, 224, 1) 0%, rgba(238, 243, 246, 1) 71%, rgba(255, 255, 255, 0.022846638655462215) 78%);
+    padding: 30px 0;
+}
+
+/*Imagen de aros olimpicos, */
+.imagen-titulo{
+    /*Para colocar elementos uno al lado del otro*/
+    display:flex;
+    justify-content: center;
+    /*Si los elementos no caben en una sola línea, se envolverán en líneas adicionales dentro del contenedor.*/
+    flex-wrap: wrap;
+}
+
+.aros-olimpicos {
+    width: 140px;
+    padding-top: 20px;
+}
+
+/*Titulo principal*/
+.title {
+    font-size: 60px;
+    color: #122466;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}   
+
+/*Titulo Bienvenidos*/
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: rgba(5, 85, 5, 0.993);
+} 
+
+/*Texto*/
+h5{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: rgba(5, 85, 5, 0.993);
+    text-shadow: 2px 2px 2px #faf9f9;
+}
+
+/*Boton calculo*/
+.btnCalcular {
+    background-color: #122466;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    margin: 20px 0 30px 70px;
+    padding: 0 30px;
+}
+
+.btnCalcular:hover{
+    background-color: #F0AA0A;
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+/*Texto donde aparece el calculo, el class esta en main.js*/
+.cantidadGenero {
+    display: inline-block;
+    margin: 30px 70px;
+    font-size: 20px;
+    background-color: #F0AA0A;
+    cursor: pointer;
+    border-radius: 8px;
+    /*Sombra*/
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(110, 109, 110, 0.64);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(110, 109, 110, 0.64);
+    box-shadow: 0px 5px 15px 0px rgba(110, 109, 110, 0.64);
+}
+
+/*Div (contenedor) que contiene todos los Select*/
+.botones-general {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*Div de cada Select por separado*/
+.contenido-select {
+    padding: 15px 20px;
+}
+
+/*Class de cada Select*/
+.selectores {
+    appearance: none;
+    color: #ffffff;
+    font-size: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #122466;
+    border: none;
+    height: 40px;
+    width: 220px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.selectores:hover {
+    background-color: #F0AA0A;
+    /*Para dar el efecto aumento*/
+    transform: scale(1.1);
+    transition: transform 0.5s;
+
+}
+
+/*Este class se encuentra en main.js, imagen de medallas*/
+.imagen-medalla {
+    width: 110px;
+    border-radius: 30px;
+}
+
+/*Contenedor de las cards, efecto flip*/
+#resultado{ 
+    /*Coloca las cards una al lado de la otra*/
+    display: flex;
+    /*Si los elementos no caben en una sola línea, se envolverán en líneas adicionales dentro del contenedor.*/
+    flex-wrap: wrap;
+    /*Espacio entre las cards*/
+    gap: 28px;
+    justify-content: space-between;
+    padding: 10px 70px;
+    margin: 0 40px;
+    /*Color de fondo*/
+    background: rgb(231, 234, 240);
+    background: linear-gradient(94deg, rgba(231, 234, 240, 0.7875525210084033) 0%, rgba(247, 249, 251, 0.7931547619047619) 43%, rgba(227, 228, 230, 0.7231267507002801) 100%);
+    border-radius: 10px;
+    /*Sombra*/
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112, 111, 112, 0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112, 111, 112, 0.54);
+    box-shadow: 0px 5px 15px 0px rgba(112, 111, 112, 0.54);
+}
+
+/*Contenedor de cards en general */
+.flip-container{
+    background-color: transparent;
+    width: 280px;
+    height: 300px;
+    border-radius: 30px;
+    perspective: 1000px;
+}
+
+/*Contenedor de cards completa */
+.card-completa{
+    /*Nueva posición de un elemento en relación con su posición normal.*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    /*Transición suave, que dura 1 segundo*/
+    transition: transform 1s;
+    /*Transformacion 3D de la card*/
+    transform-style: preserve-3d;
+    cursor: pointer;
+    font-size: 10px;
+
+}
+
+.flip-container:hover .card-completa {
+    transform: rotateY(180deg);/*giro de 180 grados*/
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;/*Ocultamos una cara de la card, mietras se muestra la otra*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+/*Color de card frente*/
+.front {
+    background: rgb(227, 228, 230);
+    background: linear-gradient(94deg, rgba(227, 228, 230, 0.7875525210084033) 0%, rgba(231, 232, 234, 1) 52%, rgba(227, 228, 230, 0.7231267507002801) 100%);
+}
+
+/*Color de card atras, y rotacion de la card*/
+.back {
+    background-color: #F0AA0A;
+    color: #122466;
+    transform: rotateY(180deg);
+}
+
+/*Color de nombre del atleta*/
+.nombre-atleta{
+    color: #ffffff;
+}
+
+
+/*Pie de pagina*/
+footer{
+    margin: 30px 0;
+}
+
+.pie-pagina{
+    background: rgb(2, 0, 36);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(8, 16, 50, 1) 0%, rgba(107, 189, 224, 1) 0%, rgba(238, 243, 246, 1) 71%, rgba(255, 255, 255, 0.022846638655462215) 78%);
+    padding: 40px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+
